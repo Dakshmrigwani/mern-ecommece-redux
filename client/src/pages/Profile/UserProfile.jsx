@@ -15,7 +15,7 @@ function UserProfile() {
 
   const fetchUserData = async () => {
     const response = await axios.get(
-      "https://scout-api.vercel.app/api/auth/me",
+      "https://api-mern-ecommece.vercel.app/api/auth/me",
       {
         headers: {
           Authorization: `Bearer ${
