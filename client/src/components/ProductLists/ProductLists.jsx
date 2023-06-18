@@ -52,7 +52,9 @@ function ProductLists() {
   // get categorys
   useEffect(() => {
     const getCategories = async () => {
-      const response = await axios.get("http://localhost:5000/api/categories/");
+      const response = await axios.get(
+        "https://api-mern-ecommece.vercel.app/api/categories/"
+      );
       setCategories(response.data.categories);
     };
     getCategories();

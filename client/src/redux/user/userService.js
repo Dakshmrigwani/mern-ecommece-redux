@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/auth",
+  baseURL: "https://api-mern-ecommece.vercel.app/api/auth",
 });
 
 API.interceptors.request.use((req) => {

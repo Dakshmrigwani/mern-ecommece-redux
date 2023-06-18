@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/wishlists",
+  baseURL: "https://api-mern-ecommece.vercel.app/api/wishlists",
 });
 
 API.interceptors.request.use((req) => {

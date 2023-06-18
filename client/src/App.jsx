@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     async function getStripeApiKey() {
       const { data } = await axios.get(
-        "http://localhost:5000/api/stripeapikey",
+        "https://api-mern-ecommece.vercel.app/api/stripeapikey",
         {
           headers: {
             Authorization: `Bearer ${

@@ -58,7 +58,7 @@ function Payment() {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:5000/api/payment/process",
+        "https://api-mern-ecommece.vercel.app/api/payment/process",
         paymentData,
         config
       );
