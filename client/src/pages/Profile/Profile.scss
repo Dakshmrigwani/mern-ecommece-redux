@@ -1,0 +1,120 @@
+@import "../../variables.scss";
+
+.user_profile_container {
+  max-width: 900px;
+  margin: 5rem auto;
+  padding: 0rem 2rem;
+
+  .profile_box {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 1rem;
+    margin-top: 7rem;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: $shadow-2;
+
+    @media (max-width: 580px) {
+      grid-template-columns: 1fr;
+      margin-top: 4rem;
+    }
+
+    .profile__left {
+      padding: 1.4rem;
+      .profile__img {
+        height: 17rem;
+        width: 17rem;
+        margin: 0 auto;
+        margin-bottom: 1.4rem;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        color: #444;
+        margin-bottom: 1rem;
+      }
+
+      .edit_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.2rem;
+
+        button {
+          padding: 1.5rem 4rem;
+          border: none;
+          background: $orange;
+          color: #fff;
+          text-transform: capitalize;
+          font-size: 1.5rem;
+          border-radius: 0.3rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .profile__right {
+      padding: 1.4rem;
+
+      .profile_info {
+        .box {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2rem;
+
+          @media (max-width: 580px) {
+            align-items: center;
+            justify-content: center;
+          }
+
+          label {
+            font-size: 2.2rem;
+            color: $orange;
+            margin-bottom: 0.4rem;
+          }
+
+          span {
+            font-size: 1.8rem;
+            margin-left: 3rem;
+
+            @media (max-width: 580px) {
+              margin-left: 0rem;
+            }
+          }
+        }
+
+        .profile_btns {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 3rem;
+
+          @media (max-width: 580px) {
+            justify-content: center;
+            flex-direction: column;
+          }
+
+          button {
+            padding: 1.5rem 4rem;
+            border: none;
+            background: $orange;
+            color: #fff;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

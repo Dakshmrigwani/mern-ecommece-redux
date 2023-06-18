@@ -1,0 +1,145 @@
+@import "../../variables.scss";
+
+.order_conatiner {
+  max-width: 1250px;
+  margin: 5rem auto;
+  margin-top: 5rem;
+
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1.8fr 0.8fr;
+    gap: 1rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .left {
+      padding: 1.2rem;
+      border-right: 2px solid rgb(221, 220, 220);
+
+      .shipping_heading {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+
+        h2 {
+          font-size: 2.5rem;
+          color: #444;
+          text-transform: capitalize;
+        }
+      }
+
+      .info {
+        margin-left: 1.6rem;
+
+        h3 {
+          font-size: 1.4rem;
+          margin-bottom: 0.7rem;
+        }
+      }
+
+      .cart_items {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+      }
+
+      .cart_info {
+        overflow-y: scroll;
+        .cart_box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 1rem;
+          margin-bottom: 1.6rem;
+          .cart_img {
+            width: 60px;
+            height: 60px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          h3 {
+            font-size: 1.5rem;
+            color: #444;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+
+    .right {
+      height: 70%;
+
+      .main_div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+        flex-direction: column;
+
+        .summery_heading {
+          margin-top: 2rem;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 1rem 2rem;
+
+          h2 {
+            font-size: 2.3rem;
+            color: #444;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .summery {
+        padding: 0rem 2rem;
+      }
+
+      .summery_details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .common {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 1rem 2rem;
+          border-bottom: 1px solid #ddd;
+
+          h3 {
+            font-size: 1.6rem;
+            color: #444;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .payment {
+        display: inline-block;
+        margin-top: 1.8rem;
+        width: 100%;
+        background: tomato;
+        color: #fff;
+        border: 2px solid tomato;
+        outline: none;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        padding: 1.3rem 1.6rem;
+        cursor: pointer;
+        border-radius: 0.4rem;
+      }
+    }
+  }
+}

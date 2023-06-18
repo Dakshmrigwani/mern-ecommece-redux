@@ -1,0 +1,245 @@
+@import "../../variables.scss";
+
+.main_container {
+  max-width: 1200px;
+  margin: 5rem auto;
+
+  .alert_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .empty {
+      // color: #444;
+      margin-top: 2rem;
+      font-size: 2rem !important;
+      color: red;
+      background: $white;
+      padding: 1rem;
+      border: 1px solid #777;
+      width: 70%;
+      text-align: center;
+
+      @media (max-width: 450px) {
+        width: 90%;
+      }
+    }
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 3.4rem;
+      letter-spacing: 0.1rem;
+      color: #444;
+      margin-bottom: 0.6rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .flex_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 5rem;
+    padding: 0 1.5rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .left {
+      flex: 0.7;
+
+      @media (max-width: 768px) {
+        flex: 1;
+        width: 100%;
+      }
+
+      table {
+        width: 100%;
+        border-spacing: 0rem;
+        color: #fff;
+
+        thead {
+          width: 100%;
+
+          .table-row {
+            width: 100%;
+            background: rgb(59, 58, 58);
+            th {
+              padding: 0.5rem !important;
+              font-size: 1.7rem;
+            }
+
+            .price-heading {
+              @media (max-width: 500px) {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .product_info {
+          tr {
+            width: 100%;
+            text-align: center;
+
+            td {
+              color: #444;
+              padding: 2rem;
+
+              .img_div {
+                height: 7.4rem;
+                width: 7.4rem;
+                margin: 0 auto;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+
+            .name {
+              font-size: 2rem;
+              color: #222;
+            }
+
+            .price {
+              font-size: 1.8rem;
+              color: #333;
+              font-weight: 550;
+
+              @media (max-width: 500px) {
+                display: none;
+              }
+            }
+
+            .qty_div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 2rem;
+
+              h3 {
+                font-size: 2.1rem;
+              }
+
+              .inc-dec {
+                font-size: 2rem;
+                font-weight: 500;
+                color: #222;
+                font-weight: 550;
+                cursor: pointer;
+              }
+            }
+
+            .remove_item {
+              cursor: pointer;
+              .icon {
+                font-size: 2.4rem;
+                color: crimson;
+              }
+            }
+          }
+        }
+      }
+
+      .go-back {
+        margin-top: 2rem;
+        padding: 0.6rem 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        button {
+          border: 2px solid #222;
+          padding: 1rem 2rem;
+          font-size: 1.5rem;
+          color: #222;
+          font-weight: 550;
+          cursor: pointer;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .right {
+      flex: 0.3;
+      background: rgb(228, 228, 228);
+      @media (max-width: 768px) {
+        flex: 1;
+        width: 100%;
+      }
+
+      .heading {
+        text-align: center;
+        background: #222;
+        padding: 0.33rem 0;
+
+        h1 {
+          font-size: 2rem;
+          color: #fff;
+        }
+      }
+
+      .sub-total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.6rem 0.8rem;
+
+        h2 {
+          font-size: 2rem;
+          color: #444;
+        }
+      }
+
+      .shipping {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.6rem 0.8rem;
+        margin-top: 1rem;
+
+        h3 {
+          font-size: 1.6rem;
+          color: #444;
+        }
+      }
+
+      .total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.6rem 0.8rem;
+        margin-top: 1rem;
+
+        h2 {
+          font-size: 2rem;
+          color: #444;
+        }
+      }
+
+      .check-out {
+        margin-top: 2rem;
+
+        button {
+          background: #222;
+          width: 100%;
+          padding: 1rem 2rem;
+          font-size: 1.7rem;
+          color: #fff;
+          cursor: pointer;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
